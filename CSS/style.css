@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: darkgrey;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+}
+
+.container div {
+    background-color: fuchsia;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    animation-name: loading;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container .two {
+    animation-delay: 0.3s;
+}
+
+.container .three {
+    animation-delay: 0.6s;
+}
+
+@keyframes loading {
+    to {
+        opacity: 0.2;
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+        transform: translateY(-20px);
+}
+}
